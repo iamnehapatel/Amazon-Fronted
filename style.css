@@ -23,7 +23,7 @@ body {
     border: 1px solid white;
 }
 
-/* Navbar container mechanics */
+/* Navbar Style */
 .navbar {
     height: 60px;
     width: 100%;
@@ -33,10 +33,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 1000;
 }
 
 .nav-logo {
@@ -154,9 +150,8 @@ body {
     font-size: 26px;
 }
 
-/* Secondary panel layout mechanics */
+/* Panel Menu Style */
 .panel {
-    margin-top: 60px;
     height: 39px;
     width: 100%;
     background: #222f3d;
@@ -183,7 +178,7 @@ body {
     font-size: 13px;
 }
 
-/* --- FIX FOR HERO IMAGE: Prevent Image Cropping completely --- */
+/* Hero Section */
 .hero-container {
     width: 100%;
     background-color: #eaeded;
@@ -191,10 +186,10 @@ body {
 
 .hero {
     background-image: url(images/hero.jpg);
-    background-size: 100% auto; /* Forces image to fit full width nicely without chopping top/bottom */
+    background-size: 100% auto;
     background-repeat: no-repeat;
     width: 100%;
-    height: 550px; /* Restores the tall landscape space */
+    height: 420px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -209,7 +204,7 @@ body {
     padding: 15px;
     width: 96%;
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
@@ -219,28 +214,23 @@ body {
     text-decoration: none;
 }
 
-/* Product Card Grid Alignment rules */
+/* Core Desktop Grid System (Keep Original Setup) */
 .shop-sec {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 0 20px;
     margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
 }
 
 .banner-card {
     background-color: var(--white-col);
     padding: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .banner-card h2 {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 700;
     color: #111;
 }
@@ -249,8 +239,8 @@ body {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
+    height: 275px;
     object-fit: cover;
-    aspect-ratio: 4/3;
 }
 
 .banner-card h5 a {
@@ -258,7 +248,7 @@ body {
     text-decoration: none;
 }
 
-/* Carousel Section container rules */
+/* Carousel Section */
 .seemore {
     padding: 15px 20px;
     display: flex;
@@ -303,7 +293,7 @@ body {
     max-width: 100%;
 }
 
-/* Footer Section formatting layout styles */
+/* Footer Section */
 .footer1 {
     display: flex;
     align-items: center;
@@ -312,6 +302,8 @@ body {
     color: var(--white-col);
     background: #37475a;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .footer2 {
@@ -358,19 +350,63 @@ body {
 }
 .footer5 a { color: #ccc; text-decoration: none; margin: 0 10px; }
 
-/* Media Breakpoints for Responsiveness */
+/* ======================================================== */
+/* ⚡ PERFECT CLEAN SMARTPHONE RESPONSIVE MEDIA QUERY BLOCK */
+/* ======================================================== */
 @media (max-width: 992px) {
-    .shop-sec { grid-template-columns: repeat(2, 1fr); }
-    .footer2, .footer4 { grid-template-columns: repeat(2, 1fr); }
-    .hero { height: 350px; }
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Breaking Grid & Structuring left-to-right rows cleanly */
+    .shop-sec {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px;
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .banner-card {
+        width: 100% !important;
+        margin: 0 auto;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    }
+
+    .banner-card img {
+        width: 100%;
+        height: auto;
+        max-height: 320px;
+        object-fit: contain;
+    }
+
+    .hero {
+        height: 240px; /* Scaling down empty container size gracefully */
+    }
+
+    .carousel-container, .seemore, .furnishing {
+        margin: 0 15px 20px 15px !important;
+        width: calc(100% - 30px) !important;
+        padding: 10px !important;
+    }
+
+    .footer2, .footer4 {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center;
+        gap: 25px;
+    }
 }
 
-@media (max-width: 768px) {
-    .navbar { height: auto; flex-wrap: wrap; padding: 10px; gap: 8px; }
-    .search-box { order: 2; width: 100%; margin: 5px 0 0 0; }
-    .nav-add, .nav-country, .nav-returns { display: none; }
-    .panel { margin-top: 105px; }
-    .shop-sec { grid-template-columns: 1fr; }
-    .hero { height: 220px; }
-    .footer2, .footer4 { grid-template-columns: 1fr; text-align: center; }
+@media (max-width: 550px) {
+    .nav-add, .nav-country, .panel-deals, .nav-returns {
+        display: none !important; /* Non-essential mobile hide system to secure viewport alignment */
+    }
+    .navbar {
+        padding: 0 8px;
+    }
+    .search-box {
+        margin: 0 8px;
+    }
 }
