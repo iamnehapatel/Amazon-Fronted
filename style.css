@@ -214,7 +214,7 @@ body {
     text-decoration: none;
 }
 
-/* Core Desktop Grid System (Keep Original Setup) */
+/* Core Desktop Grid System */
 .shop-sec {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -350,63 +350,20 @@ body {
 }
 .footer5 a { color: #ccc; text-decoration: none; margin: 0 10px; }
 
-/* ======================================================== */
-/* ⚡ PERFECT CLEAN SMARTPHONE RESPONSIVE MEDIA QUERY BLOCK */
-/* ======================================================== */
+/* ⚡ MOBILE RESPONSIVE FIX */
 @media (max-width: 992px) {
-    body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-
-    /* Breaking Grid & Structuring left-to-right rows cleanly */
     .shop-sec {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 20px;
-        padding: 0 15px;
-        width: 100%;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+        padding: 0 10px !important;
     }
-
-    .banner-card {
-        width: 100% !important;
-        margin: 0 auto;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-    }
-
-    .banner-card img {
-        width: 100%;
-        height: auto;
-        max-height: 320px;
-        object-fit: contain;
-    }
-
-    .hero {
-        height: 240px; /* Scaling down empty container size gracefully */
-    }
-
-    .carousel-container, .seemore, .furnishing {
-        margin: 0 15px 20px 15px !important;
-        width: calc(100% - 30px) !important;
-        padding: 10px !important;
-    }
-
-    .footer2, .footer4 {
-        display: flex !important;
-        flex-direction: column !important;
-        text-align: center;
-        gap: 25px;
-    }
+    .banner-card img { height: 180px !important; }
+    .footer2 { grid-template-columns: repeat(2, 1fr) !important; }
 }
 
 @media (max-width: 550px) {
-    .nav-add, .nav-country, .panel-deals, .nav-returns {
-        display: none !important; /* Non-essential mobile hide system to secure viewport alignment */
-    }
-    .navbar {
-        padding: 0 8px;
-    }
-    .search-box {
-        margin: 0 8px;
-    }
+    .shop-sec { grid-template-columns: 1fr !important; }
+    .footer2 { grid-template-columns: 1fr !important; }
+    .nav-add, .nav-country, .nav-signin, .nav-returns, .panel-deals { display: none !important; }
 }
