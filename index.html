@@ -1,264 +1,276 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>Amazon Clone</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
     <header>
-      <div class="navbar">
-        <div class="nav-logo">
-          <div class="logo border"></div>
+        <div class="navbar">
+            <div class="nav-logo" >
+                <div class="logo border"></div>
+            </div>
+            <div class="nav-add border">
+                <p class="add1">Hello</p>
+                   <div class="add-icon"><i class="fa-solid fa-location-dot"></i>
+                    <p class="add2"><b> Select your address</b></p></div>
+                 </div>
+                 <div class="search-box">
+                    <select class="search-select">
+                        <option>All</option>
+                    </select>
+                    <input placeholder="Search Amazon.in" class="search-input">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                 </div>
+                 <div class="nav-country border">
+<img src="images/flag.jpg" class="nav-flag" height="100%" width="100%">
+EN 
+<i class="fa-solid fa-angle-down"></i>
+                 </div>
+                 <div class="nav-signin border">
+                    <p class="nav1st"><span>Hello, sign in</span></p>
+                  <p class="nav2nd">Accounts & Lists  <i class="fa-solid fa-angle-down"></i></p>
+                 </div>
+                 <div class="nav-returns border">
+                    <p class="nav1st"><span>Returns</span></p>
+                    <p class="nav2nd">& Orders</p>
+                 </div>
+                 <div class="nav-cart border">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    Cart
+                 </div>
         </div>
 
-        <div class="nav-add border">
-          <p class="add1">Hello</p>
-          <div class="add-icon">
-            <i class="fa-solid fa-location-dot"></i>
-            <p class="add2"><b>Select your address</b></p>
-          </div>
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>All
+            </div>
+            <div class="panel-nav">
+                <p class="border">Amazon miniTV</p>
+                <p class="border">Sell</p>
+                <p class="border">Best Sellers</p>
+                <p class="border">Today's Deals</p>
+                <p class="border">Mobiles</p>
+                <p class="border">New releases</p>
+                <p class="border">Customer Service</p>
+                <p class="border">Prime</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="panel-deals border">New Launches from Mobiles, Electronis & more|Shop now</div>
         </div>
-
-        <div class="search-box">
-          <select class="search-select">
-            <option>All</option>
-          </select>
-          <input placeholder="Search Amazon.in" class="search-input" />
-          <div class="search-icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-        </div>
-
-        <div class="nav-country border">
-          <img src="images/flag.jpg" class="nav-flag" alt="Flag" />
-          <span>EN</span>
-          <i class="fa-solid fa-angle-down"></i>
-        </div>
-
-        <div class="nav-signin border">
-          <p class="nav1st"><span>Hello, sign in</span></p>
-          <p class="nav2nd">
-            Accounts & Lists <i class="fa-solid fa-angle-down"></i>
-          </p>
-        </div>
-
-        <div class="nav-returns border">
-          <p class="nav1st"><span>Returns</span></p>
-          <p class="nav2nd">& Orders</p>
-        </div>
-
-        <div class="nav-cart border">
-          <i class="fa-solid fa-cart-arrow-down"></i>
-          <span>Cart</span>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-all border"><i class="fa-solid fa-bars"></i>All</div>
-        <div class="panel-nav">
-          <p class="border">Amazon miniTV</p>
-          <p class="border">Sell</p>
-          <p class="border">Best Sellers</p>
-          <p class="border">Today's Deals</p>
-          <p class="border">Mobiles</p>
-          <p class="border">New releases</p>
-          <p class="border">Customer Service</p>
-          <p class="border">Prime</p>
-          <i class="fa-solid fa-angle-down"></i>
-        </div>
-        <div class="panel-deals border">
-          New Launches from Mobiles, Electronics & more
-        </div>
-      </div>
     </header>
-
-    <div class="hero-container">
-      <div class="hero">
-        <div class="herosec">
-          <p>
-            You are on amazon.com. You can also shop on Amazon India for
-            millions of products with fast local delivery.
-          </p>
-          <a href="https://amazon.in">Click here to go to amazon.in</a>
-        </div>
-      </div>
+    <div class="hero">
+<div class="herosec">
+    <p>You are on amazon.com. You can alsi shop on Amazon India for millions of productd with fast local delivery.</p>
+    <a>Click here to go amzon.in</a>
+</div>
+</div>
+<div class="shop-sec">
+    <div class="banner-card">
+        <h2>Great Freedom sale 
+            Coming Soon...</h2>
+        <img src="images/shopimg5.jpg" alt="">
+        <h5><a href="#">See all</a></h2>
     </div>
-
-    <div class="shop-sec">
-      <div class="banner-card">
-        <h2>Great Freedom sale Coming Soon...</h2>
-        <img src="images/shopimg5.jpg" alt="Sale Box" />
-        <h5><a href="#">See all</a></h5>
-      </div>
-      <div class="banner-card">
+    <div class="banner-card">
         <h2>Bluetooth Calling Smartwatch starts at....</h2>
-        <img src="images/shopimg1.jpg" alt="Smartwatch" />
-        <h5><a href="#">Shop Now</a></h5>
-      </div>
-      <div class="banner-card">
+        <img src="images/shopimg1.jpg" alt="">
+        <h5><a href="#">Shop Now</a></h2>
+    </div>
+    <div class="banner-card">
         <h2>Starting ₹99 | Baby essentials & toys</h2>
-        <img src="images/shopimg2.jpg" alt="Baby Care" />
-        <h5><a href="#">Shop Now</a></h5>
-      </div>
-      <div class="banner-card">
+        <img src="images/shopimg2.jpg" alt="">
+        <h5><a href="#">Shop Now</a></h2>
+    </div>
+    <div class="banner-card">
         <h2>Up to 60% off | Styles for men</h2>
-        <img src="images/shopimg3.jpg" alt="Men Fashion" />
-        <h5><a href="#">Shop Now</a></h5>
-      </div>
+        <img src="images/shopimg3.jpg" alt="">
+        <h5><a href="#">Shop Now</a></h2>
     </div>
-
-    <div class="shop-sec">
-      <div class="banner-card">
+</div>
+<div class="shop-sec">
+    <div class="banner-card">
         <h2>Appliances for your home | Up to 55% off</h2>
-        <img src="images/shopimg4.jpg" alt="Appliances" />
-        <h5><a href="#">Shop Now</a></h5>
-      </div>
-      <div class="banner-card">
+        <img src="images/shopimg4.jpg" alt="">
+        <h5><a href="#">Shop Now</a></h2>
+    </div>
+    <div class="banner-card">
         <h2>Revamp your home in style</h2>
-        <img src="images/shopimg6.jpg" alt="Home Decor" />
-        <h5><a href="#">Shop Now</a></h5>
-      </div>
-      <div class="banner-card">
+        <img src="images/shopimg6.jpg" alt="">
+        <h5><a href="#">Shop Now</a></h2>
+    </div>
+    <div class="banner-card">
         <h2>New looks for the new season</h2>
-        <img src="images/shopimg7.jpg" alt="Fashion Trends" />
-        <h5><a href="#">Shop fashion</a></h5>
-      </div>
-      <div class="banner-card">
+        <img src="images/shopimg7.jpg" alt="">
+        <h5><a href="#">Shop fashion</a></h2>
+    </div>
+    <div class="banner-card">
         <h2>Up to 60% off | Styles for women</h2>
-        <img src="images/shopimg9.jpg" alt="Women Fashion" />
-        <h5><a href="#">Shop Now</a></h5>
-      </div>
+        <img src="images/shopimg9.jpg" alt="">
+        <h5><a href="#">Shop Now</a></h2>
     </div>
-
-    <div class="seemore">
-      <h2>Related to items you've viewed</h2>
-      <p>See more</p>
-    </div>
-
-    <div class="carousel-container">
-      <div class="carousel-sec" id="productCarousel">
-        <div><img src="images/1.jpg" alt="1" /></div>
-        <div><img src="images/2.jpg" alt="2" /></div>
-        <div><img src="images/3.jpg" alt="3" /></div>
-        <div><img src="images/4.jpg" alt="4" /></div>
-        <div><img src="images/5.jpg" alt="5" /></div>
-        <div><img src="images/6.jpg" alt="6" /></div>
-        <div><img src="images/7.jpg" alt="7" /></div>
-        <div><img src="images/8.jpg" alt="8" /></div>
-        <div><img src="images/9.jpg" alt="9" /></div>
-        <div><img src="images/10.jpg" alt="10" /></div>
-      </div>
-    </div>
-
-    <div class="furnishing">
-      <div><img src="images/homefurnishing.jpg" alt="Home Furnishing" /></div>
-    </div>
-
-    <div class="shop-sec">
-      <div class="banner-card">
+</div>
+<div class="seemore"><h2>Related to items you've viewed  </h2><p>See more</p></div>
+<div class="carousel-sec">
+    <div><img src="images/1.jpg"/></div>
+    <div><img src="images/2.jpg"/></div>
+    <div><img src="images/3.jpg"/></div>
+    <div><img src="images/4.jpg"/></div> 
+    <div><img src="images/5.jpg"/></div>
+    <div><img src="images/6.jpg"/></div>
+    <div><img src="images/7.jpg"/></div>
+    <div><img src="images/8.jpg"/></div> 
+    <div><img src="images/9.jpg"/></div>
+    <div><img src="images/10.jpg"/></div> 
+</div>
+<div class="furnishing">
+    <div><img src="images/homefurnishing.jpg"/></div>
+</div>
+<div class="shop-sec">
+    <div class="banner-card">
         <h2>Under ₹499 | Pocket-friendly fashion</h2>
-        <img src="images/shopimg11.jpg" alt="Fashion Budget" />
-        <h5><a href="#">See all</a></h5>
-      </div>
-      <div class="banner-card">
-        <h2>Birthday store....... Gifts for Everyone</h2>
-        <img src="images/shopimg12.jpg" alt="Gifts Corner" />
-        <h5><a href="#">Shop Now</a></h5>
-      </div>
-      <div class="banner-card">
-        <h2>Essentials for Expecting Mothers</h2>
-        <img src="images/shopimg13.jpg" alt="Mother Care" />
-        <h5><a href="#">See more</a></h5>
-      </div>
-      <div class="banner-card">
-        <h2>Hip Hop India | Watch Now Only on miniTV</h2>
-        <img src="images/shopimg14.jpg" alt="MiniTV Content" />
-        <h5><a href="#">Watch for FREE | miniTV</a></h5>
-      </div>
+        <img src="images/shopimg11.jpg" alt="">
+        <h5><a href="#">See all</a></h2>
     </div>
-
-    <footer>
-      <div class="footer1" id="backToTop">Back to top</div>
-      <div class="footer2">
-        <ul>
-          <p>Get to Know Us</p>
-          <a href="#">About Us</a>
-          <a href="#">Careers</a>
-          <a href="#">Press Releases</a>
-          <a href="#">Amazon Science</a>
-        </ul>
-        <ul>
-          <p>Connect with Us</p>
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-        </ul>
-        <ul>
-          <p>Make Money with Us</p>
-          <a href="#">Sell on Amazon</a>
-          <a href="#">Become an Affiliate</a>
-          <a href="#">Advertise Your Products</a>
-        </ul>
-        <ul>
-          <p>Let Us Help You</p>
-          <a href="#">Your Account</a>
-          <a href="#">Returns Centre</a>
-          <a href="#">Help</a>
-        </ul>
-      </div>
-
-      <div class="footer3">
-        <div><img src="images/amazon_logo.png" alt="Amazon Logo" /></div>
-      </div>
-
-      <div class="footer4">
-        <div>
-          <ul>
-            <p>AbeBooks</p>
-            <a href="#">Books, art</a>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <p>AWS</p>
-            <a href="#">Cloud Services</a>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <p>Audible</p>
-            <a href="#">Audio Books</a>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <p>IMDb</p>
-            <a href="#">Movies & TV</a>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer5">
-        <div>
-          <a href="#">Conditions of Use</a>
-          <a href="#">Privacy Notice</a>
-        </div>
-        <div class="text">© 1996-2026, Amazon.com, Inc. or its affiliates</div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+    <div class="banner-card">
+        <h2>Birthday store.......
+            Gifts for Everyone
+        </h2>
+        <img src="images/shopimg12.jpg" alt="">
+        <h5><a href="#">Shop Now</a></h2>
+    </div>
+    <div class="banner-card">
+        <h2>Essentials for Expecting Mothers</h2>
+        <img src="images/shopimg13.jpg" alt="">
+        <h5><a href="#">See more</a></h2>
+    </div>
+    <div class="banner-card">
+        <h2>Hip Hop India | Watch Now Only on miniTV</h2>
+        <img src="images/shopimg14.jpg" alt="">
+        <h5><a href="#">Watch for FREE | miniTV</a></h2>
+    </div>
+</div>
+<footer>
+<div class="footer1">Back to top</div>
+<div class="footer2">
+    <ul>
+        <p>Get to Know Us</p>
+        <a>About Us</a>
+       <a>Careers</a>
+       <a>Press Releases</a>
+       <a>Amazon Science</a>
+    </ul>
+<ul>
+    <p>Connect with Us</p>
+    <a>Facebook</a>
+    <a>Twitter</a>
+    <a>Instagram</a>
+</ul>
+<ul>
+    <p>Make Money with Us</p>
+    <a>Sell on Amazon</a>
+    <a>Sell under Amazon Accelerator</a>
+    <a>Protect and Build Your Brand</a>
+   <a>Amazon Global Selling</a>
+    <a>Become an Affiliate</a>
+   <a>Fulfilment by Amazon</a>
+    <a>Advertise Your Products</a>
+    <a>Amazon Pay on Merchants</a>
+</ul>
+<ul>
+   <p>Let Us Help You</p>
+    <a>COVID-19 and Amazon</a>
+   <a>Your Account</a>
+    <a>Returns Centre</a>
+    <a>100% Purchase Protection</a>
+    <a>Amazon App Download</a>
+   <a>Help</a>
+</ul>
+</div>
+<div class="footer3">
+<div><img src="images/amazon_logo.png"></div>
+</div>
+<div class="footer4">
+    <div>
+<ul>
+   <p>AbeBooks</p>
+    <a>Books, art</a>
+    <a>& collectibles</a>
+</ul>
+</div>
+<div>
+<ul>
+   <p>Amazon Web Services</p>
+    <a>Scalable Cloud</a>
+    <a>Computing Services</a>	
+</ul>
+</div>
+<div>
+<ul>
+	<p>Audible</p>
+    <a>Download</a>
+    <a>Audio Books</a>	
+</ul>
+</div>
+<div>
+<ul>
+   <p>DPReview</p>
+    <a>Digital</a>
+    <a>Photography</a>	
+</ul>
+</div>
+<div>
+<ul>
+   <p>IMDb</p>
+    <a>Movies, TV</a>
+    <a>& Celebrities</a>
+</ul>
+</div>
+<div>
+    <ul>
+       <p>Shopbop</p>
+        <a>Designer</a>
+        <a>Fashion Brands</a>
+    </ul>
+</div>
+    <div>
+    <ul>
+       <p>Amazon Business</p>
+        <a>Everything For</a>
+        <a>Your Business</a>
+    </ul>
+</div>
+    <div>
+    <ul>
+       <p>Prime Now</p>
+        <a>2-Hour Delivery</a>
+        <a>on Everyday Items</a>
+    </ul>
+</div>
+    <div>
+    <ul>
+       <p>Amazon Prime Music</p>
+        <a>100 million songs, ad-free</a>
+        <a>Over 15 million podcast episodes</a>		         
+    </ul>
+</div>
+<div></div>
+</div>
+<div class="footer5">
+    <div>
+   <a>Conditions of Use & Sale</a>
+ <a>Privacy Notice</a>
+   <a>Interest-Based Ads</a>
+    </div>
+    <div class="text">
+        © 1996-2023, Amazon.com, Inc. or its affiliates
+    </div>
+</div>
+</footer>
+</body>
 </html>

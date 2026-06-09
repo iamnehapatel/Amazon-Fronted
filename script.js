@@ -1,14 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Back to top click behavior
-    const backToTop = document.getElementById("backToTop");
-    
-    if (backToTop) {
-        backToTop.style.cursor = "pointer";
-        backToTop.addEventListener("click", function () {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
+// script.js
+console.log("Amazon Clone Loaded");
+
+// Agar tum mobile par menu show/hide karna chahte ho:
+function toggleMenu() {
+    let panel = document.querySelector(".panel");
+    if(panel.style.display === "flex") {
+        panel.style.display = "none";
+    } else {
+        panel.style.display = "flex";
+        panel.style.flexDirection = "column"; // Mobile ke liye vertical
     }
-});
+}
